@@ -1,54 +1,108 @@
-# React + TypeScript + Vite
+Sure! Here's a complete, professional `README.md` you can include in your submission for the **CometChat internship assignment**:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+```markdown
+# 📬 CometChat Internship Assignment Submission
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👨‍💻 Submitted by
 
-## Expanding the ESLint configuration
+**Name:** Himanshu Yadav  
+**Email Used for Signup:** himanshuyadav1727+test@gmail.com  
+**Phone:** +91-8010936104  
+**Submission Date:** 19 may 2025
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Tech Stack
+
+- **Framework:** React
+- **Language:** TypeScript
+- **Bundler:** Vite
+- **Styling:** CSS Modules / Custom CSS
+- **Chat Integration:** CometChat UI Kit
+
+---
+
+## 🚀 Project Overview
+
+This project demonstrates the integration of CometChat’s UI Kit into a custom React application using Vite and TypeScript.
+
+Key features implemented:
+
+- ✅ Real-time messaging for users and groups  
+- ✅ Dynamic UI rendering based on block status  
+- ✅ Message composer with conditional visibility  
+- ✅ Customizable tab navigation (Chats, Calls, Users, Groups)  
+- ✅ Feature-based configuration using context  
+- ✅ Handling of UI Kit permissions for calls, reactions, replies, etc.
+
+
+
+---
+
+## 💡 What I Learned
+
+Integrating a real-time chat system like CometChat into a custom UI required careful handling of props, permissions, and SDK events. This assignment helped me:
+
+- Understand component-based architecture of the UI Kit
+- Learn how to override and conditionally render features using context
+- Improve my debugging and component state management skills in React
+
+---
+
+## 📌 Suggestions for Improvement
+
+Here are a few suggestions that might improve the CometChat UI Kit experience:
+
+1. **Block Status Clarity**  
+   A clearer SDK method or flag to check and update block/unblock status would be helpful.
+
+2. **Error Messaging**  
+   Better in-built error messages or hooks for common HTTP issues like `403` would improve DX.
+
+3. **UI Customization**  
+   Exposing more theme options (colors, sizes, fonts) via props would make styling more flexible.
+
+4. **WebSocket Behavior**  
+   During local dev, issues like `ERR_CONNECTION_REFUSED` should be better handled if the dev server is down.
+
+---
+
+## 📩 Submission Notes
+
+- The app is tested with CometChat and works with user and group messaging.
+- Some UI features are conditionally rendered based on the `BuilderSettingsContext`.
+- All feature flags, user interactions, and UI decisions are documented in code comments.
+
+---
+
+## 🧪 How to Run Locally
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/yourusername/cometchat-internship.git
+cd cometchat-internship
+
+# 2. Install dependencies
+npm install
+
+# 3. Add CometChat credentials
+# Replace placeholders in your environment config or directly in code
+
+# 4. Start the dev server
+npm run dev
+````
+
+---
+
+## 🙌 Thank You
+
+It was a great learning experience working with the CometChat UI Kit. Thank you for the opportunity! I look forward to your feedback.
+
+---
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Let me know if you'd like this saved as a file or need help uploading it to GitHub!
 ```
